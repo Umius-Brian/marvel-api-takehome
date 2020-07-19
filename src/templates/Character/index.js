@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Header from "./Header"
 import Details from "./Details"
-// import Comics from "./Comics"
+import Comics from "./Comics"
 
 
 export class Character extends Component {
@@ -14,7 +14,7 @@ export class Character extends Component {
       <Layout title={name}>
         <Header thumbnail={file} description={description} />
         <Details thumbnail={thumbnail} />
-        {/* <Comics /> */}
+        <Comics />
       </Layout>
     )
   }

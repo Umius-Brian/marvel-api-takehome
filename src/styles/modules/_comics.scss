@@ -1,0 +1,13 @@
+.comics {
+  @extend .pb-5;
+  overflow-x:hidden;
+
+  &__item {
+    @extend .px-1;
+
+    &__image {
+      width: 100%;
+      display: block;
+    }
+  }
+}
