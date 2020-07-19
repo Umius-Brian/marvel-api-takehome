@@ -3,4 +3,67 @@
   overflow-x: hidden;
   padding-bottom: 20rem;
   margin-bottom: -10rem;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 10rem;
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 3rem;
+  }
+
+  &__background {
+    @extend .position-absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 100%;
+    min-width: 100%;
+  }
+
+  &__content {
+    @extend .container, .d-md-flex, .text-light, .mt-5;
+
+    &__thumbnail {
+      @extend .img-fluid, .order-md-1;
+      width: 100%;
+    }
+
+    &__body {
+      text-align: center;
+      margin-top: 1rem;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 60%;
+        margin-top: 0;
+        text-align: start;
+        font-size: to-rem(24);
+      }
+
+      &__description {
+        @include media-breakpoint-up(lg) {
+          margin-top: 3rem;
+        }
+      }
+
+      &__get-started {
+        @extend .btn, .btn-primary, .text-white, .border-0;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        padding: to-rem(11) to-rem(58);
+        box-shadow: 2px 3px 5px #ffffff28;
+
+        @include media-breakpoint-up(md) {
+          margin-top: 3rem;
+          background: #cc3332;
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }

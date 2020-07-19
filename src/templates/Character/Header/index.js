@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Nav from "../../../components/Layout/Nav"
 import { extendBaseClass } from "../../../utils/classes"
 import background from "./background@2x.png"
 import Image from "gatsby-image"
@@ -14,6 +15,7 @@ export class Header extends Component {
     const body = extend(content, "body");
     return (
       <header className={this.baseClass}>
+        <Nav />
         <img
           src={background}
           alt="background-img"
