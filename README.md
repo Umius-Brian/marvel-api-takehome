@@ -71,7 +71,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 11. **`README.md`**: A text file containing useful reference information about your project.
 
-<img src="images/marvel-api-image(1).png" width="250">
+<img src="images/marvel-api-image(1).png" width="200" >
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
