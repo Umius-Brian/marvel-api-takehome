@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import Links from "./Links/index"
 import Logo from "./Logo"
 
@@ -21,3 +21,5 @@ export class Nav extends Component {
     )
   }
 }
+
+export default Nav;

@@ -2,16 +2,16 @@ const path = require(`path`)
 
 // retrieve character ID
 const getPageQuery = () => `
-query CharacterQuery {
+query MyQuery {
   charactersNode {
     id
   }
 }
 `
 
-// each character's page and info
-const createCharacterPage = (createPage, info) => {
-  const { id } = info;
+// each character's page and node
+const createCharacterPage = (createPage, node) => {
+  const { id } = node;
   createPage({
     context: {
       id,

@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Nav from "../../../components/Layout/Nav"
-import { extendBaseClass } from "../../../utils/classes"
 import background from "./background@2x.png"
 import Image from "gatsby-image"
 import { extendBaseClass, extend } from "../../../utils/classes"

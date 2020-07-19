@@ -1,20 +1,20 @@
-import React from "react";
+import React, { Component } from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "../../components/Layout"
 import Header from "./Header"
-import Details from "./Details"
-import Comics from "./Comics"
+// import Details from "./Details"
+// import Comics from "./Comics"
 
 
 export class Character extends Component {
   render() {
-    const { charactersNode, file } = this.props.data;
+    const { file, charactersNode } = this.props.data;
     const { name, description, thumbnail } = charactersNode;
     return (
       <Layout title={name}>
         <Header thumbnail={file} description={description} />
-        <Details thumbnail={thumbnail} />
-        <Comics />
+        {/* <Details thumbnail={thumbnail} /> */}
+        {/* <Comics /> */}
       </Layout>
     )
   }
@@ -31,7 +31,7 @@ export const query = graphql`
         path
         extension
       }
-    };
+    }
     file(name: { eq: "character" }) {
       childImageSharp {
         fluid(quality: 100) {
@@ -39,7 +39,7 @@ export const query = graphql`
         }
       }
     }
-  };
+  }
 `
 
 export default Character;
