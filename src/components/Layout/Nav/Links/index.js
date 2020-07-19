@@ -4,12 +4,13 @@ import Link from "./Link"
 
 const links = [
   {
-    to:"/sign-in",
-    children: "Sign In"
+    to: "/sign-in",
+    children: "Sign In",
   },
   {
-    to: "/sgn-up",
+    to: "/sign-up",
     children: "Sign Up",
+    variant: "sign-up",
   }
 ];
 

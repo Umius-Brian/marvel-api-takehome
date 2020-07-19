@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import Header from "./Header"
-// import Details from "./Details"
+import Details from "./Details"
 // import Comics from "./Comics"
 
 
@@ -13,7 +13,7 @@ export class Character extends Component {
     return (
       <Layout title={name}>
         <Header thumbnail={file} description={description} />
-        {/* <Details thumbnail={thumbnail} /> */}
+        <Details thumbnail={thumbnail} />
         {/* <Comics /> */}
       </Layout>
     )

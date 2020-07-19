@@ -1,0 +1,37 @@
+$header-font-family: "Ropa Sans", sans-serif;
+$body-font-family: "Nunito", sans-serif;
+
+$font-sizes: (
+  xl: 3.125rem,
+  lg: 2rem,
+  md: 1.25rem,
+  sm: 1rem,
+  xs: 0.875rem,
+);
+
+@each $name, $size in $font-sizes {
+  %font-#{$name} {
+    font-size: $size;
+  }
+}
+
+* {
+  font-family: $body-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  font-weight: 700;
+}
+
+h1 {
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
+}
+

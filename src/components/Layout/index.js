@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Helmet } from "react-helmet"
 import { string } from "prop-types"
+import "../../styles/index.scss"
 
 export class Layout extends Component {
   static propTypes = {

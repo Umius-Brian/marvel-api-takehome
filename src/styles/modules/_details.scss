@@ -1,0 +1,63 @@
+.details {
+  @extend .container, .my-5;
+
+  &__title {
+    @extend .mb-5;
+    text-align: center;
+    font-family: $header-font-family;
+    font-size: to-rem(24);
+
+    @include media-breakpoint-up(md) {
+      font-size: to-rem(32);
+    }
+  }
+
+  &__content {
+    @extend .d-lg-flex, .align-items-start;
+
+    &__thumbnail {
+      @extend .img-fluid, .mb-3;
+
+      @include media-breakpoint-up(lg) {
+        width: 30%;
+        margin-right: 3rem;
+      }
+    }
+
+    &__list {
+      @extend .d-md-flex, .pl-0, .flex-wrap;
+      list-style: none;
+
+      &__item {
+        list-style: none;
+        flex-basis: calc(45% - 1rem);
+
+        @include media-breakpoint-up(md) {
+          margin-top: 0;
+          margin-left: 1rem;
+        }
+
+        & + & {
+          margin-top: 2rem;
+
+          @include media-breakpoint-up(md) {
+            margin-top: 0;
+          }
+        }
+
+        &__title {
+          @extend .my-2;
+          font-size: 1rem;
+        }
+
+        &__icon {
+          width: 2rem;
+
+          @include media-breakpoint-up(md) {
+            width: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import { extendBaseClass } from "../../../utils/classes"
+import { extend, extendBaseClass } from "../../../utils/classes"
+import List from "./List"
 
 
 export class Details extends Component {
