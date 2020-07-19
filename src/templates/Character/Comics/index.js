@@ -67,7 +67,7 @@ export class Comics extends Component {
     await this.fetchAndSetComics();
   }
 
-  componentDidUpdate({ comics: prevComics }) {
+  componentDidUpdate() {
     this.enableCarousel();
   }
 
