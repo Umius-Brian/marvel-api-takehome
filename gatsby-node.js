@@ -21,16 +21,18 @@ const createCharacterPage = (createPage, info) => {
   })
 }
 
+// await graphql begins data retrieval
 const fetchDataAndCreateCharacter = async ({ actions, graphql }) => {
   const { createPage } = actions;
   const query = getPageQuery();
-  const result = await graphql(query)
+  const result = await graphql(query);
   if (result.errors) {
-    return console.error(result.errors)
+    return console.error(result.errors);
   }
-  return createCharacterPage(createPage, result.data.charactersNode)
+  return createCharacterPage(createPage, result.data.charactersNode);
 }
 
-export const createPage = async ({ graphql, actions }) => {
-  await fetchDataAndCreateCharacter({ graphql, actions })
+// create URLs for all posts, tags, pages, and authors fetched
+exports.createPages = async ({ graphql, actions }) => {
+  await fetchDataAndCreateCharacter({ graphql, actions });
 }
