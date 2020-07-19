@@ -20,6 +20,7 @@ export class Character extends Component {
   }
 };
 
+// graphql source marvel to obtain Iron Man info
 export const query = graphql`
   {
     charactersNode {

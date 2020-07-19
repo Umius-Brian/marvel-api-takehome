@@ -14,6 +14,7 @@ const {
 
 module.exports = {
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -29,6 +30,12 @@ module.exports = {
             }
           }
         ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require(`sass`),
       }
     }
   ],
