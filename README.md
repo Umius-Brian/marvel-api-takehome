@@ -23,7 +23,7 @@
     Use the CLI to start a development server.
 
     ```shell
-    npm start
+    npm run develop
     ```
 
 3.  **Open the source code**
