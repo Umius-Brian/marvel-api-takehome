@@ -23,14 +23,20 @@
     Use the CLI to start a development server.
 
     ```shell
-    gatsby develop
+    npm start
     ```
 
-1.  **Open the source code**
+3.  **Open the source code**
 
     It should now run at `http://localhost:8000`.
 
     Save any changes and the browser will update in real time.
+
+4. **If it does not query**
+
+    Add a referrer on the Marvel Developer site, input it as 'localhost', and list your purposes under the description. Run 'gatsby clean' to clear the cache, then 'npm start'.
+
+    ![marvel-api-image(3)](https://user-images.githubusercontent.com/59684534/87951519-87f57080-ca5d-11ea-9952-10ec322d7e70.png)
 
 ## 🧐 What's inside?
 
@@ -63,13 +69,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+8. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-9. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+9. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-10. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-11. **`README.md`**: A text file containing useful reference information about your project.
+10. **`README.md`**: A text file containing useful reference information about your project.
 
 ![marvel-api-image(1)](https://user-images.githubusercontent.com/59684534/87883195-a191ac00-c9ba-11ea-8676-0af949c27d7a.png)
 
